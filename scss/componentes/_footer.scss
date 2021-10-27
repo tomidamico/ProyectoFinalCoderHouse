@@ -1,0 +1,18 @@
+@import '../base/variables';
+footer{
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        list-style: $style;
+        a{
+            text-decoration: $decoration;
+            color: #36151e;
+            font-family: 'Roboto', sans-serif;
+            padding: 3rem;
+        }
+    }
+}
+footer a:hover{
+    color: khaki;
+}

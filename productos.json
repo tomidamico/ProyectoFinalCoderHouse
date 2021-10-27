@@ -1,0 +1,14 @@
+[
+   {"id":1, "title":"Pantalon Camuflado BYN", "price":2150, "category":"pantalon", "size":1, "color":"unico", "stock":15, "img":"../images/PantalonCamufladoBYN.JPG"},
+   {"id":2, "title":"Pantalon Camuflado BYN", "price":2150, "category":"pantalon", "size":2, "color":"unico", "stock":15, "img":"../images/PantalonCamufladoBYN.JPG"},
+   {"id":3, "title":"Buzo Bicolor", "price":2200, "category":"buzo", "size":1, "color":"marron", "stock":10, "img":"../images/BuzoBicolorMarron.JPG"},
+   {"id":4, "title":"Top Plush Tricolor", "price":1320, "category":"top", "size":1, "color":"beige", "stock":11, "img":"../images/TopPlushBeige.JPG"},
+   {"id":5, "title":"Top Plush Tricolor", "price":1320, "category":"top", "size":1, "color":"lila", "stock":11, "img":"../images/TopPlushLila.JPG"},
+   {"id":6, "title":"Chaleco Reversible", "price":2650, "category":"chaleco", "size":1, "color":"blanco", "stock":10, "img":"../images/ChalecoModReversibleBlanco.jpeg"},
+   {"id":7, "title":"Campera Cuadros", "price":1760, "category":"campera", "size":1, "color":"unico", "stock":10, "img":"../images/CamperaCuadros.JPG"},
+   {"id":8, "title":"Remeron Basico Mod", "price":1540, "category":"remera", "size":1, "color":"marron", "stock":11, "img":"../images/RemeronModMarron.jpeg"},
+   {"id":9, "title":"Bermuda Rustica", "price":1090, "category":"bermuda", "size":1, "color":"negro", "stock":20, "img":"../images/BermudaRusticaNegro.JPG"},
+   {"id":10, "title":"Short Waffle", "price":1200, "category":"short", "size":1, "color":"lila", "stock":12, "img":"../images/ShortWaffleLila.jpeg"},
+   {"id":11, "title":"Riñonera", "price":1500, "category":"accesorio", "size":"unico", "color":"blanco", "stock":5, "img":"../images/RiñoneraBlanca.jpeg"},
+   {"id":12, "title":"Barbijo Batik", "price":150, "category":"accesorio", "size":"unico", "color":"unico", "stock":6, "img":"../images/BarbijoBatik.jpeg"}
+]

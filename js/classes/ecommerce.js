@@ -33,8 +33,9 @@ class Ecommerce {
         this.cargarBotones();
     }
 
-    mostrarArrayProductosEnCarrito() {
+    mostrarCarrito() {
         let acumular = ``;
+        let descripcion = ``;
         this.carrito.productos.forEach(producto => {
             acumular += `
             <div class="card mb-3" style="max-width: 540px;">
@@ -52,7 +53,12 @@ class Ecommerce {
                 </div>
             </div>`
         });
+        descripcion = `
+        <h3>El total del pedido es de: $${this.carrito.totalCarrito}</h3>
+        <h4>Hay ${this.carrito.cantidad} elementos en el carrito</h4>
+        <button class="col-12">Ir a Pagar</button>`
         $('#carrito').html(acumular);
+        $('#desc-carrito').html(descripcion);
         this.cargarBotones();
     }
     
@@ -85,6 +91,6 @@ class Ecommerce {
         this.carrito.eliminarDelCarrito(id);
         this.carrito.calcularTotal();
         this.carrito.cantidadDeElementos();
-        this.mostrarArrayProductosEnCarrito();
+        this.mostrarCarrito();
     }
 }

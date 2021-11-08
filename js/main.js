@@ -1,6 +1,6 @@
 const miTienda = new Ecommerce();
 miTienda.mostrarArrayProductos();
-miTienda.mostrarArrayProductosEnCarrito();
+miTienda.mostrarCarrito();
 
 
 // document.getElementById(...).addEventListener('click', () => {

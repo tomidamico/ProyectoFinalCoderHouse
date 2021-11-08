@@ -19,7 +19,6 @@
 
     <!-- Script -->
     <script src="./js/classes/ecommerce.js" defer></script>
-    <script src="./js/classes/producto.js" defer></script>
     <script src="./js/classes/carrito.js" defer></script>
     <script src="./js/main.js" defer></script>
 
@@ -42,18 +41,12 @@
                             <img src="./images/list.svg" alt="list" width="40px" height="25px">
                         </a>
                     </div>
-                    <div>
-                        <form class="d-flex align-items-center">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <img src="./images/search.svg" alt="Lupa" width="40px" height="25px">
-                        </form>
-                    </div>
                 </div>
                 <div class="align-items-center">
                     <a href="index.html"><img src="./images/LogoMod.png" class="logo" alt="Logo de Mod"></a>
                 </div>
                 <div class="align-items-center">
-                    <a onclick="miTienda.mostrarArrayProductosEnCarrito()" role="button" data-bs-toggle="offcanvas"
+                    <a onclick="miTienda.mostrarCarrito()" role="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./images/bag.svg"
                             alt="Cart" width="40px" height="25px"></a>
                 </div>
@@ -97,6 +90,9 @@
                     aria-label="Close"></button>
             </div>
             <div id="carrito" class="offcanvas-body">
+
+            </div>
+            <div id="desc-carrito">
 
             </div>
         </div>
@@ -152,13 +148,13 @@
     </section>
 
     <!-- Los mas vendidos!!!-->
-    <section id="cards" class="d-flex">
+    <section id="cards" class="row">
 
     </section>
 
     <!-- Footer -->
     <footer>
-        <div id="footer">
+        <div>
             <ul>
                 <li><a href="faqs.html">Preguntas Frecuentes</a></li>
                 <li><a href="quienesSomos.html">Quienes Somos</a></li>

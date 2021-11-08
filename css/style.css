@@ -66,6 +66,10 @@ section a img {
   padding: 25px 0;
 }
 
+#cards .card {
+  margin: 25px;
+}
+
 * {
   margin: 0;
   padding: 0;

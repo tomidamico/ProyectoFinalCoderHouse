@@ -25,7 +25,7 @@ class Ecommerce {
                 <div class="card-body">
                     <h5 class="card-title">${producto.title}</h5>
                     <h6>Precio: $${producto.price}</h6>
-                    <button data-idproducto="${producto.id}" class="btn-agregar-carrito">Agregar al Carrito</button>
+                    <button data-idproducto="${producto.id}" class="btn btn-secondary btn-agregar-carrito">Agregar al Carrito</button>
                 </div>
             </div>`
         });
@@ -47,7 +47,7 @@ class Ecommerce {
                         <div class="card-body">
                             <h5 class="card-title">${producto.title}</h5>
                             <h6>Precio: $${producto.price}</h6>
-                            <button id="card" data-idproducto="${producto.id}" class="btn-eliminar-carrito">Eliminar del Carrito</button>
+                            <button id="card" data-idproducto="${producto.id}" class="btn btn-dark btn-eliminar-carrito">Eliminar del Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -55,8 +55,8 @@ class Ecommerce {
         });
         descripcion = `
         <h3>El total del pedido es de: $${this.carrito.totalCarrito}</h3>
-        <h4>Hay ${this.carrito.cantidad} elementos en el carrito</h4>
-        <button class="col-12">Ir a Pagar</button>`
+        <h4>Hay ${this.carrito.cantidad} elemento/s en el carrito</h4>
+        <button class="btn btn-primary btn-lg col-12" onclick="miTienda.procesarPago()">Ir a Pagar</button>`
         $('#carrito').html(acumular);
         $('#desc-carrito').html(descripcion);
         this.cargarBotones();
@@ -92,5 +92,30 @@ class Ecommerce {
         this.carrito.calcularTotal();
         this.carrito.cantidadDeElementos();
         this.mostrarCarrito();
+    }
+    async procesarPago() {
+        let carrito2 = {
+            "items": [{
+                title : this.carrito.productos.title,
+                description : ".",
+                picture_url : this.carrito.productos.img,
+                category_id : this.carrito.category,
+                quantity : 1,
+                currency_id : "ARS",
+                unit_price : this.carrito.totalCarrito
+            }
+        ]}
+
+        const response = await fetch('https://api.mercadopago.com/checkout/preferences', {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer TEST-4217619531576726-102800-f497d07e40baac6dd63bd5e3a21d054d-278559209',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(carrito2)
+        });
+        const data = await response.json();
+        window.open(data.init_point,"_blank");
+        console.log(data);
     }
 }

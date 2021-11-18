@@ -1,6 +1,10 @@
 @import '../base/variables';
 header{
     div{
+        #desc-carrito{
+            font-family: 'Oswald', sans-serif;
+            background-color: gray;
+        }
         ul{
             list-style: $style;
             li{

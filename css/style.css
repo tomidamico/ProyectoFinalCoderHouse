@@ -1,6 +1,10 @@
 /*  FONT  */
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+header div #desc-carrito {
+  font-family: "Oswald", sans-serif;
+  background-color: gray;
+}
 header div ul {
   list-style: none;
 }

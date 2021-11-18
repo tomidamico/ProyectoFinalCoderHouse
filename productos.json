@@ -9,6 +9,6 @@
    {"id":8, "title":"Remeron Basico Mod", "price":1540, "category":"remera", "size":1, "color":"marron", "stock":11, "img":"../images/RemeronModMarron.jpeg"},
    {"id":9, "title":"Bermuda Rustica", "price":1090, "category":"bermuda", "size":1, "color":"negro", "stock":20, "img":"../images/BermudaRusticaNegro.JPG"},
    {"id":10, "title":"Short Waffle", "price":1200, "category":"short", "size":1, "color":"lila", "stock":12, "img":"../images/ShortWaffleLila.jpeg"},
-   {"id":11, "title":"Riñonera", "price":1500, "category":"accesorio", "size":"unico", "color":"blanco", "stock":5, "img":"../images/RiñoneraBlanca.jpeg"},
+   {"id":11, "title":"Riñonera", "price":1500, "category":"accesorio", "size":"unico", "color":"blanco", "stock":5, "img":"../images/RinoneraBlanca.jpeg"},
    {"id":12, "title":"Barbijo Batik", "price":150, "category":"accesorio", "size":"unico", "color":"unico", "stock":6, "img":"../images/BarbijoBatik.jpeg"}
 ]
